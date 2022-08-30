@@ -1,0 +1,107 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+.container {
+    height: 90%;
+}
+.header {
+    padding: 10px 30px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 40px;
+}
+#mi {
+    color: red;
+}
+#health {
+    color: lime;
+}
+a {
+    color: black;
+    margin: 0 1em;
+    font-size: 18px;
+    text-decoration: none;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("dust_scratches.webp");
+    background-color: lightgray;
+    height: 100%;
+}
+.wording {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 20%;
+    margin: .7%;
+}
+.statement {
+    font-size: 6em;
+    margin: 0px;
+}
+.images {
+    display: flex;
+    height: max-content;
+    width: 60%;
+    flex: 2 2%;
+    margin: 2%;
+}
+.breakfast {
+    background-image: url('images/breakfast_image.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 33%;
+    min-height: 30em;
+    margin: .2%;
+    position: relative;
+}
+.lunch { 
+    background-image: url('images/lunch_image.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 33%;
+    min-height: 30em;
+    margin: .2%;
+    position: relative;
+}
+.dinner {
+    background-image: url('images/dinner_image.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 33%;
+    min-height: 30em;
+    margin: .2%;
+    position: relative;
+}
+.textBox {
+    font-weight: bold;
+}
+.top {
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    bottom: 2.7em;
+    padding: .5em .6em;
+}
+.bottom {
+    background-color: lime;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding: .8em 1em;
+    width: 6em;
+    text-align: right;
+}
+
