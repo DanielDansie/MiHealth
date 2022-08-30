@@ -3,18 +3,27 @@ html {
 }
 body {
     height: 100%;
+    font-family: sans-serif;
+    background-image: url("dust_scratches.webp");
+    background-color: lightgray;
 }
 .container {
-    height: 90%;
+    height: 100%;
 }
 .header {
     padding: 10px 30px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    right: 0;
+    height: 100px;
 }
 .logo {
-    font-size: 40px;
+   font-size: 40px;
 }
 #mi {
     color: red;
@@ -28,62 +37,48 @@ a {
     font-size: 18px;
     text-decoration: none;
 }
+
 .content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-image: url("dust_scratches.webp");
-    background-color: lightgray;
+    flex-wrap: wrap;
     height: 100%;
+    padding: 25px 75px;
 }
 .wording {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
     width: 20%;
-    margin: .7%;
+    padding: 10px;
+    margin-right: 50px;
 }
 .statement {
-    font-size: 6em;
     margin: 0px;
 }
 .images {
     display: flex;
-    height: max-content;
-    width: 60%;
-    flex: 2 2%;
-    margin: 2%;
+    height: 100%;
+    justify-content: space-between;
+    flex: 1 60%; 
+    align-items: center;
+}
+.image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 33%;
+    height: 67%;
+    position: relative;
+    margin: 0 7px;
 }
 .breakfast {
     background-image: url('images/breakfast_image.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 33%;
-    min-height: 30em;
-    margin: .2%;
-    position: relative;
 }
 .lunch { 
     background-image: url('images/lunch_image.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 33%;
-    min-height: 30em;
-    margin: .2%;
-    position: relative;
 }
 .dinner {
     background-image: url('images/dinner_image.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 33%;
-    min-height: 30em;
-    margin: .2%;
-    position: relative;
 }
 .textBox {
     font-weight: bold;
@@ -104,4 +99,28 @@ a {
     width: 6em;
     text-align: right;
 }
-
+#browse {
+    display: flex;
+    align-items: center;
+}
+#browse h3 {
+    margin-right: 10px;
+}
+#browse span {
+    font-size: 1.8em;
+}
+@media (min-width: 600px) {
+    .statement {
+        font-size: 0.6em;
+    }
+}
+@media (min-width: 800px) {
+    .statement {
+        font-size: 2.8em;
+    }
+}
+@media (min-width: 1200px) {
+    .statement {
+        font-size: 3.6em;
+    }
+}
